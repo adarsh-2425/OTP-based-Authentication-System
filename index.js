@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: false }));
 const authRoutes = require("./routes/authRoute.js");
 app.use('/auth', authRoutes);
 
+//Import and use the OTPRoute
+const otpRoutes = require("./routes/otpRoute.js");
+app.use('/otp', otpRoutes);
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err);
