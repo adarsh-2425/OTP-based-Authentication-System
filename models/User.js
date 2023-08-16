@@ -14,12 +14,13 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    min: 8,
-    lowercase: true,
     required: true,   
   },
   otp: Number,
-  verified: false
+  verified: {
+    type: Boolean,
+    default: false
+  }
 });
 
 //defining model
