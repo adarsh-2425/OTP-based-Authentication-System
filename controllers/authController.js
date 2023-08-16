@@ -42,16 +42,15 @@ exports.registerUser = async (req, res) => {
 
 //Login User
 exports.loginUser = async (req, res) => {
-  const { username, password } = req.body;
+  const { email, password } = req.body;
   try {
-    const user = await User.findOne({ username });
+    const user = await User.findOne({ email });
     //console.log(user);
     if (!user) {
       return res.send(404).json({message: "User not found"});
     }
     //compare password
-    console.log(password);
-    console.log(user.password);
+
     const isPasswordValid = await bcrypt.compare(password.trim(), user.password);
 
 console.log(isPasswordValid);
@@ -60,9 +59,21 @@ console.log(isPasswordValid);
       return res.status(401).json({message: "Invald Password"})
     }
 
-    const token = jwt.sign({userId: user._id}, 'secret', {expiresIn: '1h'});
+    // Generate OTP
+    const otp = otpGenerator.generateOTP();
 
-    res.status(200).json({token, user: {username: user.username, email: user.email}});
+    //save otp to database
+    user.otp = otp;
+    await user.save();
+
+    // Send OTP via Email
+    sendOTPByEmail(email, otp);
+
+    res.status(200).json({message: "Please Enter Your OTP"});
+
+    //const token = jwt.sign({userId: user._id}, 'secret', {expiresIn: '1h'});
+
+    //res.status(200).json({token, user: {username: user.username, email: user.email}});
     
   } catch (err) {
     console.error(err.message);
