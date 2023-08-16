@@ -2,6 +2,9 @@ const bcrypt = require("bcryptjs");
 const jwt = require('jsonwebtoken');
 const User = require("../models/User");
 
+const { sendOTPByEmail } = require("../middlewares/otpMiddleware");
+const otpGenerator  = require("../utils/otpGenerator");
+
 //User Registration
 exports.registerUser = async (req, res) => {
   const{ username, email, password } = req.body;
@@ -11,18 +14,26 @@ exports.registerUser = async (req, res) => {
     if (existingUser) {
       return res.status(400).json({message: "Username or Email already exists"});
     }
+
+    // Generate OTP
+    const otp = otpGenerator.generateOTP();
+
+    // Send OTP via Email
+    sendOTPByEmail(email, otp);
+    
     //hash password
     const hashedPassword = await bcrypt.hash(password, 10);
     //new user object
     const newUser = new User({
       username,
       email,
-      password: hashedPassword
+      password: hashedPassword,
+      otp
     });
 
     //save
     await newUser.save();
-    res.status(201).json({message: "User Registered Successfully"});   
+    res.status(201).json({message: "User registered successfully, OTP sent to email"});   
   } catch (error) {
     console.error(error);
     res.status(500).json({message: "Server Error"});

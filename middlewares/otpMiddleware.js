@@ -1,7 +1,5 @@
 const nodemailer = require("nodemailer");
 
-
-
 //transporter configuration
 const transporter = nodemailer.createTransport({
   host: "smtppro.zoho.in",
