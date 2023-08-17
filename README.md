@@ -15,9 +15,10 @@ A simple OTP (One-Time Password) based authentication system built using Node.js
 
    ```bash
    git clone https://github.com/adarsh-2425/OTP-based-Authentication-System.git
+   ````
    
 1. Install dependencies:
-   ```
+   ```bash
    cd OTP-based-Authentication-System
    npm install
   ```
@@ -26,13 +27,13 @@ A simple OTP (One-Time Password) based authentication system built using Node.js
 
 Create a .env file in the root directory and set the following variables:
 
-```
+```bash
 MONGODB_URI=your-mongodb-uri
 ```
 
 3. Run the application:
 
-```
+```bash
 npm start
 ```
 
