@@ -76,22 +76,22 @@ npm start
    ![Registration](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/registration%20otp.png)
 
 2. Registration OTP:
-   ![Registration OTP](/public/images/registration_otp.png)
+   ![Registration OTP](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/registration%20otp%20email.png)
 
-3. Email Example:
-   ![Email Example](/public/images/email_example.png)
+3. Registration Success:
+   ![Email Example](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/registration%20ok.png)
 
 4. Login:
-   ![Login](/public/images/login.png)
+   ![Login](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/login%20otp.png)
 
 5. Login OTP:
-   ![Login OTP](/public/images/login_otp.png)
+   ![Login OTP](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/login%20otp%20email.png)
 
 6. JWT Token:
-   ![JWT Token](/public/images/token.png)
+   ![JWT Token](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/login%20ok%20with%20token.png)
 
 7. Profile:
-   ![Profile](/public/images/profile.png)
+   ![Profile](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/access%20secure%20root%20with%20token.png)
 
 
 
