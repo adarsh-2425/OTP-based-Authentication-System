@@ -22,7 +22,7 @@ A simple OTP (One-Time Password) based authentication system built using Node.js
    cd OTP-based-Authentication-System
    npm install
   ```
-  
+  ```
 2. Configure environment variables:  
 
 Create a .env file in the root directory and set the following variables:
