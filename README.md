@@ -41,19 +41,19 @@ npm start
 
 ### Registration
 
-- **POST /registration**: Register a new user and verify their email using OTP.
+- **POST auth/registration**: Register a new user and verify their email using OTP.
 
 ### Login
 
-- **POST /login**: Login with OTP verification.
+- **POST auth/login**: Login with OTP verification.
 
 ### Profile
 
-- **GET /profile**: Get user profile with authentication.
+- **GET auth/profile**: Get user profile with authentication.
 
 ### Delete User (Admin Only)
 
-- **DELETE /remove/:username**: Delete a user (admin only) with role-based authorization.
+- **DELETE auth/remove/:username**: Delete a user (admin only) with role-based authorization.
 
 ## Technologies Used
 
@@ -65,9 +65,9 @@ npm start
 
 ## Usage
 
-1. Register a new user by providing their email. An OTP will be sent to their email for verification.
+1. Register a new user by providing their email. An OTP will be sent to their email for verification. Use the route `/verify-otp/registration`.
 
-2. Login using the registered email and the OTP received in their email.
+2. Login using the registered email and the OTP received in their email. Use the route `/verify-otp/login`.
 
 3. Access the profile route (`/profile`) to get user information. Requires authentication.
 
