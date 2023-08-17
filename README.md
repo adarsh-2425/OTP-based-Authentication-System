@@ -73,7 +73,7 @@ npm start
 ## Screenshots
 
 1. Registration:
-   ![Registration](/public/images/registration.png)
+   ![Registration](https://github.com/adarsh-2425/OTP-based-Authentication-System/blob/main/public/images/registration.png)
 
 2. Registration OTP:
    ![Registration OTP](/public/images/registration_otp.png)
