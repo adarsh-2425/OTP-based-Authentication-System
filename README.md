@@ -70,6 +70,31 @@ npm start
 3. Access the profile route (`/profile`) to get user information. Requires authentication.
 
 
+## Screenshots
+
+1. Registration:
+   ![Registration](/public/images/registration.png)
+
+2. Registration OTP:
+   ![Registration OTP](/public/images/registration_otp.png)
+
+3. Email Example:
+   ![Email Example](/public/images/email_example.png)
+
+4. Login:
+   ![Login](/public/images/login.png)
+
+5. Login OTP:
+   ![Login OTP](/public/images/login_otp.png)
+
+6. JWT Token:
+   ![JWT Token](/public/images/token.png)
+
+7. Profile:
+   ![Profile](/public/images/profile.png)
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
