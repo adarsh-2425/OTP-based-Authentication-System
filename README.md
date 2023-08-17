@@ -1,4 +1,4 @@
-# OTP Authentication System
+# OTP based Authentication System
 
 A simple OTP (One-Time Password) based authentication system built using Node.js, Express, and MongoDB.
 
@@ -14,13 +14,14 @@ A simple OTP (One-Time Password) based authentication system built using Node.js
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/adarsh-2425/otp-authentication-system.git
+   git clone https://github.com/adarsh-2425/OTP-based-Authentication-System.git
    
 1. Install dependencies:
    ```
-   cd otp-authentication-system
-  npm install
-```
+   cd OTP-based-Authentication-System
+   npm install
+  ```
+  
 2. Configure environment variables:  
 
 Create a .env file in the root directory and set the following variables:
@@ -28,6 +29,7 @@ Create a .env file in the root directory and set the following variables:
 ```
 MONGODB_URI=your-mongodb-uri
 ```
+
 3. Run the application:
 
 ```
