@@ -7,7 +7,6 @@ A simple OTP (One-Time Password) based authentication system built using Node.js
 - User registration with email verification using OTP
 - User login with OTP verification
 - User profile route with authentication
-- Delete users (admin only) with role-based authorization
 
 ## Setup and Installation
 
@@ -51,9 +50,7 @@ npm start
 
 - **GET auth/profile**: Get user profile with authentication.
 
-### Delete User (Admin Only)
 
-- **DELETE auth/remove/:username**: Delete a user (admin only) with role-based authorization.
 
 ## Technologies Used
 
@@ -72,7 +69,6 @@ npm start
 
 3. Access the profile route (`/profile`) to get user information. Requires authentication.
 
-4. Admin users can delete other users using the delete route (`/remove/:username`). Admin role is required for authorization.
 
 ## License
 
