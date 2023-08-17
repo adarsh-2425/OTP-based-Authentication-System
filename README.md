@@ -60,6 +60,7 @@ npm start
 - Node.js
 - Express.js
 - MongoDB
+- Mongoose
 - Nodemailer (for email OTP)
 - JWT (JSON Web Tokens)
 
