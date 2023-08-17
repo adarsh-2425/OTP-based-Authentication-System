@@ -1,8 +1,9 @@
 const bcrypt = require("bcryptjs");
 const jwt = require('jsonwebtoken');
 const User = require("../models/User");
+const authMiddleware = require("../middlewares/authMiddleware");
 
-const { sendOTPByEmail } = require("../middlewares/otpMiddleware");
+const { sendOTPByEmail } = require("../middlewares/emailOtpMiddleware");
 const otpGenerator  = require("../utils/otpGenerator");
 
 //User Registration

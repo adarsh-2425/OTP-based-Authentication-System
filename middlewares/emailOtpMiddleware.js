@@ -1,5 +1,6 @@
 const nodemailer = require("nodemailer");
 
+//Nodemailer
 //transporter configuration
 const transporter = nodemailer.createTransport({
   host: "smtppro.zoho.in",
@@ -34,3 +35,4 @@ exports.sendOTPByEmail = (email, otp) => {
 
 //reference
 //https://stackoverflow.com/questions/65983495/nodemailer-invalid-login-535-authentication-failed
+
